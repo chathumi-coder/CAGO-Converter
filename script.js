@@ -123,28 +123,5 @@ async function convertPDF() {
 
   reader.readAsArrayBuffer(file);
 }
-
-
-// 🔐 Open login
-function openLogin() {
-  document.getElementById("loginModal").style.display = "flex";
-}
-
-// 🔑 Login
-function login() {
-  const user = document.getElementById("username").value;
-  const pass = document.getElementById("password").value;
-
-  if (user === "admin" && pass === "1234") {
-    document.getElementById("hero").style.display = "none";
-    document.getElementById("loginModal").style.display = "none";
-    document.getElementById("app").classList.remove("hidden");
-  } else {
-    alert("Wrong login!");
-  }
-}
-
-// 🚪 Logout
-function logout() {
   location.reload();
 }
