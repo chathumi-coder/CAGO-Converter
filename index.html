@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CAGO Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<!-- 🔥 HERO SECTION -->
+<section class="hero" id="hero">
+  <h1>⚡ CAGO Converter</h1>
+  <p>Fast • Modern • Smart PDF Converter</p>
+  <button onclick="openLogin()" class="btn glow">Get Started</button>
+</section>
+
+<!-- 🔐 LOGIN MODAL -->
+<div class="login-modal" id="loginModal">
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()" class="btn">Login</button>
+  </div>
+</div>
+
+<!-- 🚀 APP SECTION -->
+<div class="container hidden" id="app">
+
+  <h1 class="title">⚡ CAGO Converter</h1>
+
+  <input type="file" id="pdfFile" accept="application/pdf">
+
+  <button onclick="convertPDF()" class="btn">Convert</button>
+
+  <textarea id="output"></textarea>
+
+  <div class="btn-group">
+    <button onclick="downloadTXT()" class="btn">TXT</button>
+    <button onclick="downloadWord()" class="btn glow">WORD</button>
+  </div>
+
+  <button onclick="logout()" class="btn">Logout</button>
+
+  <p class="credit">
+    Made by <span>CODIXCO</span><br>
+    Owner: W.C Maleesha De Silva
+  </p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://unpkg.com/docx@7.8.2/build/index.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
